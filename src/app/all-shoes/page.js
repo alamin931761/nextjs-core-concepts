@@ -1,24 +1,13 @@
-import Link from "next/link";
-
-export const metadata = {
-  title: "Home Page",
-  description: "This is home page",
-};
-
-const HomePage = async () => {
-  const res = await fetch("http://localhost:5000/shoes", {
-    cache: "no-store",
-  });
+const AllShoesPage = async () => {
+  const res = await fetch(`http://localhost:5000/shoes`, { cache: "no-store" });
   const shoes = await res.json();
 
-  throw new Error("Error from home page!");
-
   return (
-    <div className="text-center my-5">
-      <h1 className="text-4xl">Home Page</h1>
+    <div className="text-center">
+      <h1 className="text-2xl font-semibold">All Shoes</h1>
 
-      <div className="flex justify-between flex-wrap p-5">
-        {shoes.slice(0, 3).map((shoe) => (
+      <div className="flex justify-between flex-wrap gap-5 p-5">
+        {shoes.map((shoe) => (
           <div key={shoe.id} className="card w-96 bg-base-100 shadow-xl">
             <figure>
               <img
@@ -37,12 +26,8 @@ const HomePage = async () => {
           </div>
         ))}
       </div>
-
-      <Link href="/all-shoes" className="btn btn-primary">
-        See more
-      </Link>
     </div>
   );
 };
 
-export default HomePage;
+export default AllShoesPage;

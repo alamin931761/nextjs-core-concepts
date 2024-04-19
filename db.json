@@ -1,0 +1,40 @@
+{
+  "shoes": [
+    {
+      "id": "1",
+      "title": "Nike Air Max 90",
+      "description": "Classic style meets modern comfort in these iconic sneakers.",
+      "price": 1110.99
+    },
+    {
+      "id": "2",
+      "title": "Adidas Ultraboost",
+      "description": "High-performance running shoes with responsive cushioning for long-distance runs.",
+      "price": 169.99
+    },
+    {
+      "id": "3",
+      "title": "Converse Chuck Taylor All Star",
+      "description": "Timeless sneakers with a canvas upper and rubber sole, perfect for casual wear.",
+      "price": 55.0
+    },
+    {
+      "id": "4",
+      "title": "Puma Suede Classic",
+      "description": "Iconic sneakers with a suede upper and Puma's signature Formstrip.",
+      "price": 64.95
+    },
+    {
+      "id": "5",
+      "title": "Vans Old Skool",
+      "description": "Skate-inspired sneakers with a low-top silhouette and durable canvas upper.",
+      "price": 59.99
+    },
+    {
+      "id": "6",
+      "title": "New Balance 990v5",
+      "description": "Premium sneakers with a blend of stability, cushioning, and style.",
+      "price": 174.99
+    }
+  ]
+}
